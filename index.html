@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Adoption App</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+   
+  </head>
+  <body class="container">
+    <br />
+    <h1>Pet Adoption List</h1>
+    <br />
+    <!--Here are my divs with my forms to input what information to put into the table.-->
+    <div class="petForm">
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="petName">Pet Name</label>
+            <input type="text" class="form-control" id="petName" />
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="petSpecies">Species</label>
+            <input type="text" class="form-control" id="petSpecies" />
+          </div>
+        </div>
+
+
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="petAge">Age</label>
+            <input type="text" class="form-control" id="petAge" />
+          </div>
+        </div>
+
+
+        
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="petImg">Image URL</label>
+            <input type="text" class="form-control" id="petImg" />
+          </div>
+          <br>
+          <!--Also used bootstrap class float-end to make the button appear to the right of the page, 
+          it looked more user-friendly to me.-->
+          <button id="addPet" class="btn btn-info float-end">Add Pet</button>
+        </div>
+
+
+
+
+<br> 
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--Chose to use the table-info as the tr class to add some color with bootstrap.-->
+        <table id="adoptablePets" class="table table-light">
+      <tr class = "table-info">
+        <th>Pet Name</th>
+        <th>Species</th>
+        <th>Age</th>
+        <th>Picture</th>
+        <th>Remove</th>
+      </tr>
+    </table>
+
+
+    <script src="pets.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
